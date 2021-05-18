@@ -1,0 +1,76 @@
+.recetaForm {
+   font-family: FontAwesome;
+   background-color: transparent !important;
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   justify-content: space-between;
+}
+
+.recetaForm h2 {
+   color: #fbf1c7;
+   padding-top: 10px;
+   padding-bottom: 10px;
+}
+
+.Form label {
+   padding-top: 10px;
+   padding-bottom: 10px;
+}
+
+.Form textarea {
+   background-color: #fbf1c7;
+   outline: none;
+   border-style: solid;
+   border-radius: 10px;
+   border-color: #282828;
+   font-size: 0.9em;
+   padding: 10px;
+}
+
+.Form input {
+   background-color: #fbf1c7;
+   outline-style: none;
+   border-style: solid;
+   border-radius: 100px;
+   border-color: #282828;
+   color: #282828;
+   font-size: 0.8em;
+   padding: 10px;
+}
+
+.Form {
+   display: flex;
+   flex-direction: column;
+   width: 50%;
+   align-items: center;
+   justify-content: space-evenly;
+   height: auto;
+}
+
+.Form textarea {
+   resize: none;
+}
+
+.img-input {
+   border-width: 2px;
+   margin-bottom: 20px;
+}
+
+button {
+   margin-bottom: 20px;
+   width: 50%;
+   font-size: 0.8em;
+   background-color: #fbf1c7;
+   color: #282828;
+   border-style: solid;
+   border-radius: 10px;
+   padding: 10px;
+   border: 2px #282828 solid;
+   transition: 0.2s;
+}
+
+button:hover {
+   background-color: #282828;
+   color: #fbf1c7;
+}

@@ -1,0 +1,38 @@
+.card {
+   display: flex;
+   align-items: center;
+   justify-content: space-between;
+   width: 700px;
+   border: 2px solid #282828;
+   padding: 20px;
+   padding-bottom: 10px;
+   border-radius: 20px;
+   margin: 30px;
+   transition: 0.2s;
+   background-color: #fbf1c7;
+}
+
+.card:hover {
+   cursor: pointer;
+   color: #fbf1c7;
+   background-color: #282828;
+}
+
+.card-body {
+   background-color: transparent !important;
+   height: min-content;
+   display: flex;
+   align-items: center;
+}
+
+.card-image img {
+   border-radius: 8px;
+}
+
+.card-body p {
+   padding-left: 40px;
+}
+
+.card-body h2 {
+   padding-left: 40px;
+}
