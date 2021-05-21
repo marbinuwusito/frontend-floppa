@@ -24,15 +24,14 @@ const Form = ({ handleSubmit, res }) => {
       setFormDataValues({ ...formDataValues, [name]: value });
    }
 
-   const _handleSubmit = (e) => {
-      e.preventDefault();
+   const _handleSubmit = () => {
 
       if (!params.id) {
          handleSubmit({ ...formDataValues, imgURL: inputFileRef.current.files[0] }, 'POST');
          toast.success('Receta agregada con exito');
       } else {
          handleSubmit({ ...formDataValues, imgURL: inputFileRef.current.files[0] }, 'PUT', params.id);
-         toast.success('Receta editada con exito');
+         toast.info('Receta editada con exito');
       }
 
       history.push('/user');

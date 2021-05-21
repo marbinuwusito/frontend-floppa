@@ -37,7 +37,7 @@ const User = () => {
    async function confirmDelete (id) {
       if (window.confirm("estas seguro de borrar la receta?")) {
          await deleteReceta(id);
-         toast.info('Receta borrada con exito');
+         toast.warning('Receta borrada con exito');
       }
       getUserRecetas();
    }
