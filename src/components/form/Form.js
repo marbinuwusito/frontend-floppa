@@ -53,20 +53,16 @@ const Form = ({ handleSubmit, res }) => {
 
    return (
       <div className="recetaForm">
-
          {
             params.id ?
             <h2>Editar Receta</h2>
             :
             <h2>Agregar Receta</h2>
          }
-
          <form className="Form" action="submit" onSubmit={_handleSubmit}>
-
             <label>
                1. Nombre de la receta <i className="fas fa-pizza-slice"></i>
             </label>
-
             <input
                name="nombre"
                value={formDataValues.nombre}
@@ -75,11 +71,9 @@ const Form = ({ handleSubmit, res }) => {
                autoFocus
                onChange={handleChange}
             />
-
             <label>
                2. Ingredientes de la receta <i className="fas fa-list"></i>
             </label>
-
             <textarea
                name="ingredientes"
                cols="30" rows="10"
@@ -87,11 +81,9 @@ const Form = ({ handleSubmit, res }) => {
                value={formDataValues.ingredientes}
                onChange={handleChange}
             />
-
             <label>
                3. Pasos a realizar <i className="fas fa-shoe-prints"></i>
             </label>
-
             <textarea
                name="pasos"
                cols="30" rows="10"
@@ -99,11 +91,9 @@ const Form = ({ handleSubmit, res }) => {
                value={formDataValues.pasos}
                onChange={handleChange}
             />
-
             <label>
                4. Descripcion <i className="fas fa-scroll"></i>
             </label>
-
             <textarea
                name="description"
                cols="30"
@@ -112,15 +102,11 @@ const Form = ({ handleSubmit, res }) => {
                value={formDataValues.description}
                onChange={handleChange}
             />
-
             <label>
                5. Foto del resultado final <i className="fas fa-images"></i>
             </label>
-
             <input type="file" className="img-input" ref={inputFileRef}/>
-
             <hr />
-
             {
                params.id ?
                   <button>Editar</button>
@@ -128,7 +114,6 @@ const Form = ({ handleSubmit, res }) => {
                   <button>Agregar</button>
             }
          </form>
-
       </div>
    );
 }
